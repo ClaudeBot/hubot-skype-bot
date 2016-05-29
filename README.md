@@ -2,6 +2,8 @@
 
 A Hubot adapter for the official [Skype Bots API (Preview)][skypebots].
 
+This adapter relies on **Skype NodeJS SDK**.
+
 Refer to Skype Bots [documentation][] for more information.
 
 See [`src/skype.coffee`](src/skype.coffee) for full documentation.
