@@ -12,10 +12,16 @@ class Skype extends Adapter
         @apiTimeout = 15000
         @robot.logger.info "hubot-skype-bot: Adapter loaded."
 
+    _nameFromId: (userId) ->
+        parts = userId.split(":")
+        parts[parts.length - 1]
+
     _createUser: (userId, roomId = false, displayName = "") ->
         user = @robot.brain.userForId(userId)
         user.room = roomId if roomId
-        user.name = displayName if displayName.length > 0
+        user.name = displayName
+        if displayName.length < 1
+           user.name = @_nameFromId(userId)
         @robot.logger.info("hubot-skype-bot: new user : ", user)
         user
 
