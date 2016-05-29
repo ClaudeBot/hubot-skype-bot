@@ -1,0 +1,31 @@
+{
+  "name": "hubot-skype-bot",
+  "description": "A Hubot adapter for the official Skype Bots API (Preview).",
+  "version": "1.0.0",
+  "author": "Ian Lai <os@fyianlai.com>",
+  "license": "MIT",
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "adapter",
+    "azure",
+    "bot",
+    "microsoft",
+    "skype"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ClaudeBot/hubot-skype-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ClaudeBot/hubot-skype-bot/issues"
+  },
+  "dependencies": {
+    "skype-sdk": "https://devportalassets.azureedge.net/files/skype-sdk.tar.gz"
+  },
+  "peerDependencies": {},
+  "main": "./src/skype.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
